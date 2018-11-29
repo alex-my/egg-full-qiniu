@@ -4,6 +4,8 @@ exports.fullQiniu = {
   default: {
     ak: '', // Access Key
     sk: '', // Secret Key
+    useCdnDomain: true,
+    isLog: true,
   },
   app: true,
   agent: false,
