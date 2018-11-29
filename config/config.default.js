@@ -6,6 +6,7 @@ exports.fullQiniu = {
     sk: '', // Secret Key
     useCdnDomain: true,
     isLog: true,
+    baseUrl: null, // 用于拼接已上传文件的完整地址
   },
   app: true,
   agent: false,
