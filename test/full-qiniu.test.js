@@ -1,5 +1,6 @@
 'use strict';
 
+const assert = require('assert');
 const mock = require('egg-mock');
 
 describe('test/full-qiniu.test.js', () => {
@@ -7,6 +8,7 @@ describe('test/full-qiniu.test.js', () => {
   before(() => {
     app = mock.app({
       baseDir: 'apps/full-qiniu-test',
+      plugin: 'full-qiniu',
     });
     return app.ready();
   });
@@ -14,10 +16,8 @@ describe('test/full-qiniu.test.js', () => {
   after(() => app.close());
   afterEach(mock.restore);
 
-  it('should GET /', () => {
-    return app.httpRequest()
-      .get('/')
-      .expect('hi, fullQiniu')
-      .expect(200);
+  it('should test hi', () => {
+    console.log(`app.fullQiniu: ${JSON.stringify(app.fullQiniu)}`);
+    assert(app.fullQiniu.hi() === 'hi');
   });
 });
