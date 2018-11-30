@@ -1,7 +1,7 @@
 {
   "name": "egg-full-qiniu",
-  "version": "1.0.3",
-  "description": "七牛相关工具",
+  "version": "1.0.4",
+  "description": "封装七牛云SDK，方便在egg中使用，包含文件上传，资源管理，CDN推送",
   "eggPlugin": {
     "name": "fullQiniu"
   },
