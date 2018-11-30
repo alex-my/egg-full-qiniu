@@ -1,4 +1,4 @@
-# egg-full-jwt
+# egg-full-qiniu
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -7,18 +7,18 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-full-jwt.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-full-jwt
-[travis-image]: https://img.shields.io/travis/eggjs/egg-full-jwt.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-full-jwt
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-full-jwt.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-full-jwt?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-full-jwt.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-full-jwt
-[snyk-image]: https://snyk.io/test/npm/egg-full-jwt/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-full-jwt
-[download-image]: https://img.shields.io/npm/dm/egg-full-jwt.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-full-jwt
+[npm-image]: https://img.shields.io/npm/v/egg-full-qiniu.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-full-qiniu
+[travis-image]: https://img.shields.io/travis/eggjs/egg-full-qiniu.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/egg-full-qiniu
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-full-qiniu.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs/egg-full-qiniu?branch=master
+[david-image]: https://img.shields.io/david/eggjs/egg-full-qiniu.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/egg-full-qiniu
+[snyk-image]: https://snyk.io/test/npm/egg-full-qiniu/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-full-qiniu
+[download-image]: https://img.shields.io/npm/dm/egg-full-qiniu.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-full-qiniu
 
 <!--
 Description here.
@@ -38,7 +38,7 @@ $ npm i egg-full-qiniu --save
 
 ```js
 // config/plugin.js
-exports.fullJwt = {
+exports.fullQiniu = {
   enable: true,
   package: 'egg-full-qiniu',
 };
@@ -48,7 +48,7 @@ exports.fullJwt = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.fullJwt = {
+exports.fullQiniu = {
   default: {
     ak: '', // Access Key
     sk: '', // Secret Key
