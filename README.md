@@ -54,7 +54,6 @@ exports.fullQiniu = {
     sk: '', // Secret Key
     useCdnDomain: true,
     isLog: true,
-    baseUrl: null, // 用于拼接已上传文件的完整地址
   },
   app: true,
   agent: false,
@@ -64,6 +63,7 @@ exports.fullQiniu = {
   // client: {
   //     zone: '', // Zone_z0 华东, Zone_z1 华北, Zone_z2 华南, Zone_na0 北美
   //     bucket: '',
+  //     baseUrl: null, // 用于拼接已上传文件的完整地址
   // }
 
   // 多实例
@@ -72,10 +72,12 @@ exports.fullQiniu = {
   //     myImage: {
   //         zone: '', // Zone_z0 华东, Zone_z1 华北, Zone_z2 华南, Zone_na0 北美
   //         bucket: '',
+  //     baseUrl: null, // 用于拼接已上传文件的完整地址
   //     },
   //     myText: {
   //         zone: '', // Zone_z0 华东, Zone_z1 华北, Zone_z2 华南, Zone_na0 北美
   //         bucket: '',
+  //     baseUrl: null, // 用于拼接已上传文件的完整地址
   //     },
   // },
 };
