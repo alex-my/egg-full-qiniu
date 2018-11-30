@@ -85,6 +85,25 @@ exports.fullQiniu = {
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
 
+## 使用
+
+- 通过`app.fullQiniu`调用函数，在配置文件中已经固定`bucket`
+- 在多实例中进行`move`，`copy`时，可以通过`getBucket()`获取本实例的`bucket`值
+- 单实例中:
+
+  ```js
+  app.fullQiniu.uploadFile(key, file);
+  ```
+
+- 多实例中
+
+  ```js
+  const image = app.fullQiniu.get('myImage');
+  const imageBak = app.fullQiniu.get('myImageBak');
+
+  const result = image.copy('p1.png', imageBak.getBucket(), 'p1_bak.png', true);
+  ```
+
 ## API
 
 - uploadFile(key, file)
