@@ -1,6 +1,6 @@
 {
   "name": "egg-full-qiniu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "七牛相关工具",
   "eggPlugin": {
     "name": "fullQiniu"
