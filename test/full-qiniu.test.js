@@ -17,7 +17,6 @@ describe('test/full-qiniu.test.js', () => {
   afterEach(mock.restore);
 
   it('should test hi', () => {
-    console.log(`app.fullQiniu: ${JSON.stringify(app.fullQiniu)}`);
     assert(app.fullQiniu.hi() === 'hi');
   });
 });
