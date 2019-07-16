@@ -1,6 +1,6 @@
 {
   "name": "egg-full-qiniu",
-  "version": "1.0.6",
+  "version": "1.1.6",
   "description": "封装七牛云SDK，方便在egg中使用，包含文件上传，资源管理，CDN推送",
   "eggPlugin": {
     "name": "fullQiniu"
@@ -13,17 +13,17 @@
     "qiniu"
   ],
   "dependencies": {
-    "qiniu": "^7.2.1"
+    "qiniu": "^7.2.2"
   },
   "devDependencies": {
-    "autod": "^3.0.0",
-    "autod-egg": "^1.0.0",
-    "egg": "^2.0.0",
-    "egg-bin": "^4.3.0",
-    "egg-ci": "^1.8.0",
-    "egg-mock": "^3.13.0",
-    "eslint": "^4.11.0",
-    "eslint-config-egg": "^5.1.0",
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.22.2",
+    "egg-bin": "^4.13.0",
+    "egg-ci": "^1.12.0",
+    "egg-mock": "^3.23.1",
+    "eslint": "^6.0.1",
+    "eslint-config-egg": "^7.4.1",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
